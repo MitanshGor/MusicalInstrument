@@ -1,0 +1,275 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+.heading
+{
+    /* background-image: url("https://i.pinimg.com/736x/f1/b4/d1/f1b4d1ab2f341677abfe2e38ad871f93.jpg"); */
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+.header
+{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    color: #7B3514;
+    text-shadow: 6px 6px 5px black;
+}
+h1 span{
+    font-size: 2.6rem;
+    margin-left: 0rem;
+}
+.goBack{
+float: right;
+    padding: 0.4rem;
+    width: 10rem;
+    margin-right: 1em;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background: #7B3514;
+    text-transform: uppercase;
+    border: 2px solid black;
+
+}
+.goBack:hover{
+
+    background: #7B3514;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+
+#container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#piano
+{
+    width: 80%;
+    height: 70%;
+position:relative;
+top: 3em;
+left: 9em;
+display: flex;
+flex-direction: column;
+}
+.upperPiano
+{
+    width: 100%;
+    
+    height: 55%;
+    background-color: #7B3514;
+    border-top-left-radius:180px;
+    border-top-right-radius: 20px;
+    /* box-shadow:-10px 10px 4px white; */
+    position: relative;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.upperPiano .screen
+{
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    background-color: rgb(228, 209, 209);
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    border: 10px solid black;
+    box-shadow: 0px 0px 8px white;
+
+}
+.upperPiano .screen h3{
+    font-size: 3rem;
+    margin-top: 0.2rem;
+}
+.upperPiano .screen .lowerRightPart
+{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+.upperPiano .screen .lowerRightPart div
+{
+
+    padding: 2em;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.upperPiano .screen h3 span{
+    padding: 0.4rem;
+}
+.upperPiano .rightPart
+{
+    width: 45%;
+    height: 90%;
+    margin-top: .5rem;
+    box-shadow: 0px 0px 8px white; 
+    border-radius: 20px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upperPiano .rightPart .upperRightPart
+{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.upperPiano .rightPart .upperRightPart div{
+
+    height: 90%;
+    width: 3%;
+    box-shadow: 3px 3px 0px black;
+    border: 5px solid black;
+}
+.upperPiano .rightPart .lowerRightPart
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90%;
+    height: 20%;
+}
+.upperPiano .rightPart .lowerRightPart div
+{
+    padding: 0.7em;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+.lowerPiano
+{
+    width: 100%;
+    height: 45%;
+    position: relative;
+}
+
+.lowerPianoBlack
+{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.lowerPianoBlack > .btnBlock 
+{
+  width: 16.6666%;
+  height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lowerPianoBlack  .btnBlock  [id*="btnBlack"]
+{
+    background-color: black;
+    width: 20%;
+    height: 100%;
+   
+}
+.lowerPianoBlack  .btnBlock:nth-child(1)  [id*="btnBlack"]
+{
+    margin-left: 1.67rem;
+}
+
+.lowerPianoBlack  .btnBlock:nth-child(2)  [id*="btnBlack"]
+{
+    margin-left: 1.0rem;
+}
+
+.lowerPianoBlack  .btnBlock:nth-child(3)  [id*="btnBlack"]
+{
+    margin-left: 1.9rem;
+}
+
+.lowerPianoBlack  .btnBlock:nth-child(4)  [id*="btnBlack"]
+{
+    margin-left: 1.0rem;
+}
+
+.lowerPianoBlack  .btnBlock:nth-child(5)  [id*="btnBlack"]
+{
+    margin-left: 1.9rem;
+}
+
+.lowerPianoBlack  .btnBlock:nth-child(6)  [id*="btnBlack"]
+{
+    margin-left: 1.0rem;
+}
+.lowerPianoBlack  .btnBlock  [id*="btnBlack"]:hover
+{
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.lowerPianoWhite
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+.lowerPianoWhite > [id*="btnWhite"]{
+    width: 4.76190476%;
+    height: 100%;
+    z-index: 1
+    ;
+    padding-top: 10rem;
+    text-align: center;
+    vertical-align: text-bottom;
+    border: 2px solid black;
+    background-color: white;
+}
+.lowerPianoWhite > [id*="btnWhite"]:nth-child(1){
+    border-bottom-left-radius:20px ;
+}
+.lowerPianoWhite > [id*="btnWhite"]:nth-child(21){
+    border-bottom-right-radius:20px;
+}
+
+
+.lowerPianoWhite > [id*="btnWhite"]:hover{
+    width: 4.75%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 4px solid black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    * {
+        font-size: 14px;
+    }
+  }

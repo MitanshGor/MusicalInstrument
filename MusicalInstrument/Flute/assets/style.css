@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.heading {
+    /* background-image: url("https://i.pinimg.com/736x/f1/b4/d1/f1b4d1ab2f341677abfe2e38ad871f93.jpg"); */
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    color: #7B3514;
+    text-shadow: 6px 6px 5px black;
+}
+
+h1 span {
+    font-size: 2.6rem;
+    margin-left: 0rem;
+}
+
+.goBack {
+    float: right;
+    padding: 0.4rem;
+    width: 10rem;
+    margin-right: 1em;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background: #7B3514;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.goBack:hover {
+    background: #7B3514;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+#container {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.Flute {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 3em;
+    left: 9em;
+    position: relative;
+}
+
+.line-Container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.topLine {
+    width: 95%;
+    height: 10%;
+    margin-top: 9em;
+    background-color: #7B3514;
+    border: 3px solid white;
+    transform-origin: left;
+    border-radius: 1em;
+    border-top-right-radius: 70px;
+}
+
+.bar-Container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bars {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bars * {
+    width: 8%;
+    border-radius: 1em;
+    margin-left: 2.3em;
+}
+
+
+/* .dot{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    } */
+
+[class*="dot"] {
+    padding: 1em;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 5px 3px 10px black;
+    margin-top: 8rem;
+}
+
+.dot1 {
+    margin-top: 9.5rem;
+}
+
+#hole1>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole2>.dot1:hover {
+    background-color: darkgrey;
+}
+
+#hole3>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole4>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole5>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole6>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole7>.dot1:hover {
+    background-color: darkgray;
+}
+
+#hole8>.dot1:hover {
+    background-color: darkgray;
+}
+
+© 2021 GitHub,
+Inc.

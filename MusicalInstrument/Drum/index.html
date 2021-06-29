@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum</title>
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+    <audio controls="controls" type="audio/mp3" src="" id="audio"  hidden>
+    </audio>
+    <div class="heading">
+        <div class="header">
+            <h1>D<span>rum</span></h1>
+        </div>
+        <a href="/MainPage/index.html"><button class="goBack">Menu</button></a>    
+    </div>
+    <div id="container">
+        
+        <div class="Drum">
+            <div class="centerDrum" >
+
+                <div id="Circle" onmouseover="playSound(this.id)"></div>
+                <div class="leftRod">
+                    <div class="leftTopHing"></div>
+                    <div class="leftCenterRod"></div>
+                    <div class="leftBottomHing"></div>
+                </div>
+                <div class="rightrod">
+                    <div class="rightTopHing"></div>
+                    <div class="rightCenterRod"></div>
+                    <div class="rightBottomHing"></div>
+                </div>
+            </div>
+            <div class="LeftDrum">
+                <div id="Box" onmouseover="playSound(this.id)">
+                    <div class="BoxUp"></div>
+                    <div class="BoxDown"></div>
+                </div>
+                <div class="straightRod"></div>
+                <div class="AngledRod"></div>
+                <div class="BottomHing"></div>
+            </div>
+            <div class="RightDrum">
+
+                <div id="BoxLow"  onmouseover="playSound(this.id)">
+                    <div class="BoxUp"></div>
+                    <div class="BoxDown"></div>
+                </div>
+                <div id="BoxHigh"  onmouseover="playSound(this.id)">
+                    <div class="BoxUp"></div>
+                    <div class="BoxDown"></div>
+                </div>
+                <div class="StringRod"></div>
+                <div class="AngledRod"></div>
+                <div class="BottomHinge"></div>
+            </div>
+            <div class="leftRing">
+                <div id="LRingPlay"  onmouseover="playSound(this.id)">
+                    <div class="topBall"></div>
+                    <div class="cap"></div>
+                    <div class="dish"></div>
+                </div>
+                <div class="firstRod"></div>
+                <div class="secondRod"></div>
+                <div class="ball1"></div>
+                <div class="legLeft"></div>
+                <div class="legRight"></div>
+                <div class="legExtensionsLeft"></div>
+                <div class="legExtensionsRight"></div>
+                <div class="leftHing"></div>
+                <div class="rightHing"></div>
+                <div class="VertibraRod"></div>
+                <div class="ball2"></div>
+                
+            </div>
+            <div class="rightRing" >
+                <div id="RRingPlay"  onmouseover="playSound(this.id)">
+                    <div class="topBall"></div>
+                    <div class="cap"></div>
+                    <div class="dish"></div>
+                </div>
+                <div class="firstRod"></div>
+                <div class="secondRod"></div>
+                <div class="ball1"></div>
+                <div class="legLeft"></div>
+                <div class="legRight"></div>
+                <div class="legExtensionsLeft"></div>
+                <div class="legExtensionsRight"></div>
+                <div class="leftHing"></div>
+                <div class="rightHing"></div>
+                <div class="VertibraRod"></div>
+                <div class="ball2"></div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

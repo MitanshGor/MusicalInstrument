@@ -1,0 +1,816 @@
+
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    --borderColor:white;
+    --backgroundColor:black;
+    --backgroundColorDark:black;
+    --backgroundColorLight:rgb(190, 7, 7);
+   
+}
+
+body{
+    overflow: hidden;
+}
+.heading
+{
+    /* background-image: url("https://i.pinimg.com/736x/f1/b4/d1/f1b4d1ab2f341677abfe2e38ad871f93.jpg"); */
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+.header
+{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    color: #7B3514;
+    text-shadow: 6px 6px 5px black;
+}
+h1 span{
+    font-size: 2.6rem;
+    margin-left: 0rem;
+}
+.goBack{
+    float: right;
+        padding: 0.4rem;
+        width: 10rem;
+        margin-right: 1em;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border-radius: 1rem;
+        background: #7B3514;
+        text-transform: uppercase;
+        border: 2px solid black;
+    
+    }
+    .goBack:hover{
+    
+        background: #7B3514;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+    #container{
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .Drum
+    {
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        top: 3em;
+        left: 14em;
+        position: relative;
+        padding: 1rem;
+        /* border: 2px solid; */
+    }
+    .centerDrum
+    {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        height: 50%;
+        width: 40%;
+        z-index: 100;
+    }
+    .centerDrum #Circle{
+        padding: 100px;
+        background-color: var(--backgroundColorLight);
+        width: 50%;
+        position: absolute;
+        margin-left: 6em;
+        height: 50%;
+        z-index: 1;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 3px  var(--borderColor) , 0px 0px 0px 7px maroon ,0px 0px 0px 10px  var(--borderColor) ;
+    }
+  
+    .centerDrum .leftRod .leftTopHing{
+        position: absolute;
+        padding: 3px;
+        width: 19px;
+        left: 74px;
+        background-color: var(--backgroundColorDark);
+        top: 119px;
+        transform: rotate(15deg);
+        transform-origin: left;
+        box-shadow: 0px 0px 0px 3px var(--borderColor);
+    }
+    
+    .centerDrum .leftRod .leftCenterRod{
+        width: 28%;
+        padding: 0.1em;
+        position: absolute;
+        background-color: var(--backgroundColorDark);
+        top: 48.8%;
+        left: 19%;
+        transform: rotate(110deg);
+        transform-origin: left;
+        border: 3px solid var(--borderColor);
+    }
+    .centerDrum .leftRod .leftBottomHing{
+        padding: .4em;
+        width: 10%;
+        border: 3px solid var(--borderColor);
+        position: absolute;
+        background-color: var(--backgroundColorDark);
+        top: 92%;
+        left: 5%;
+        z-index: 1;
+    }
+    .centerDrum .rightrod .rightTopHing{
+        position: absolute;
+        padding: 3px;
+        width: 19px;
+        left: 73.2%;
+        top: 119px;
+        transform: rotate(-15deg);
+        background-color: var(--backgroundColorDark);
+        transform-origin: left;
+        box-shadow: 0px 0px 0px 3px var(--borderColor);
+    }
+    
+    .centerDrum .rightrod .rightCenterRod{
+        width: 28%;
+        padding: 0.1em;
+        position: absolute;
+        top: 46.8%;
+        left: 76%;
+        background-color: var(--backgroundColorDark);
+        transform: rotate(70deg);
+        transform-origin: left;
+        border: 3px solid var(--borderColor);
+    }
+    .centerDrum .rightrod .rightBottomHing{
+        padding: .4em;
+        width: 10%;
+        border: 3px solid var(--borderColor);
+        position: absolute;
+        background-color: var(--backgroundColorDark);
+        top: 92%;
+        left: 81%;
+        z-index: 1;
+    }
+    .LeftDrum{
+        position: absolute;
+        width: 25%;
+        height: 70%;
+        left: 23%;
+        bottom: 3%;
+        /* border:   2px #7B3514 solid; */
+        z-index: 50;
+    }
+    .LeftDrum #Box
+    {
+        position: relative;
+        width: 70%;
+        height: 50%;
+        top: 8%;
+        left: 15%;
+        background-color: var(--backgroundColorLight);
+        border: 3px solid var(--borderColor);
+    }
+    .LeftDrum #Box .BoxUp
+    {
+        width: 109%;
+        margin-left: -8px;
+        margin-top: -3.5px;
+        height: 20px;
+        background-color: var(--backgroundColor);
+        border: 3px solid var(--borderColor);
+    }
+    .LeftDrum #Box .BoxDown
+    {
+        width: 109%;
+        margin-left: -8px;
+        margin-top: 138px;
+        height: 20px;
+        /* bottom: 0px; */
+        background-color: var(--backgroundColor);
+        border: 3px solid var(--borderColor);
+    }
+    .LeftDrum .straightRod{
+
+        position: absolute;
+        height: 25%;
+        width: 10px;
+        border: 3px solid var(--borderColor);
+        background-color: var(--backgroundColorDark);
+        left: 30%;
+        top: 57.3%;
+        
+        border-bottom: transparent;
+    }
+    
+    .LeftDrum .AngledRod{
+
+        position: absolute;
+        height: 17%;
+        width: 10px;
+        border: 3px solid var(--borderColor);
+        background-color: var(--backgroundColorDark);
+        left: 30.062%;
+        top: 81.4%;
+        transform: rotate(27deg);
+        transform-origin: top;
+        border-top: transparent;
+        border-bottom: transparent;
+    }
+    .LeftDrum .BottomHing{
+        padding: .4em;
+        width: 14%;
+        border: 3px solid var(--borderColor);
+        position: absolute;
+        background-color: var(--backgroundColorDark);
+        top: 92%;
+        left: 17%;
+        z-index: 1;
+    }
+    .RightDrum{
+        position: absolute;
+        width: 25%;
+        height: 84%;
+        left: 48%;
+        bottom: 3%;
+        /* border:   2px #7B3514 solid; */
+        z-index: 50;
+    }
+    
+    .RightDrum #BoxLow{
+            position: relative;
+            border:   3px var(--borderColor) solid;
+            width: 70%;
+            top: 26%;
+            left: 20%;
+            background-color: var(--backgroundColorLight);
+            height: 30%;
+                
+    }
+    .RightDrum #BoxLow .BoxUp{
+
+        width: 109%;
+        position: absolute;
+        margin-left: -8px;
+        margin-top: -3.5px;
+        height: 20px;
+        background-color: var(--backgroundColor);
+        border: 3px solid var(--borderColor);
+    }
+    .RightDrum #BoxLow .BoxDown{
+
+        width: 109%;
+        margin-left: -8px;
+        position: absolute;
+        margin-top: 105.5px;
+        height: 20px;
+        background-color: var(--backgroundColor);
+        border: 3px solid var(--borderColor);
+    }
+   
+   
+    .RightDrum #BoxHigh{
+        position: absolute;
+        border:   3px var(--borderColor) solid;
+        width: 60%;
+        top:7%;
+        left:2%;
+        background-color: var(--backgroundColorLight);
+        height: 30%;
+            transform: rotate(-10deg);
+    }
+.RightDrum #BoxHigh .BoxUp{
+
+    width: 109%;
+    margin-left: -8px;
+    position: absolute;
+    margin-top: -3.5px;
+    height: 20px;
+    left: 1%;
+    background-color: var(--backgroundColor);
+    border: 3px solid var(--borderColor);
+}
+.RightDrum #BoxHigh .BoxDown{
+
+    width: 109%;
+    position: absolute;
+    left: 1%;
+    margin-left: -8px;
+    margin-top: 103.5px;
+    height: 20px;
+    background-color: var(--backgroundColor);
+    border: 3px solid var(--borderColor);
+}
+
+.RightDrum .StringRod{
+    position: absolute;
+    width: 10px;
+    height: 26%;
+    top: 56%;
+    background-color: var(--backgroundColorDark);
+    left: 73%;
+    border: 3px solid var(--borderColor);
+    border-bottom: transparent;
+
+}
+.RightDrum .AngledRod{
+    position: absolute;
+    width: 10px;
+    height: 15%;
+    top: 81%;
+    left: 77%;
+    transform: rotate(-20deg);
+    background-color: var(--backgroundColorDark);
+    border: 3px solid var(--borderColor);
+    border-top: transparent;
+
+}
+.RightDrum .BottomHinge{
+ 
+    
+    padding: .4em;
+    width: 15%;
+    border: 3px solid var(--borderColor);
+    position: absolute;
+    background-color: var(--backgroundColorDark);
+    top: 92%;
+    left: 75%;
+    z-index: 1;
+}
+.leftRing{
+
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 26%;
+    height: 87%;
+    /* border: 1px solid black; */
+}
+.leftRing #LRingPlay{
+    position: relative;
+    left: 85%;
+    top: -5%;
+    width: fit-content;
+    /* border: 2px solid black; */
+}
+.leftRing #LRingPlay .topBall{
+    position: relative;
+    top: 2px;
+    left: 7px;
+    width: 1px;
+    height: 1px;
+    padding: 2px;
+    border: 3px solid var(--borderColor);
+    border-radius: 50%;
+    background-color: var(--backgroundColor);
+}
+.leftRing #LRingPlay .cap{
+
+    position: relative;
+    width: 20px;
+    height: 3px;
+    left: -21px;
+    padding: 2px 30px;
+    border: 3px solid var(--borderColor);
+    background-color: var(--backgroundColor);
+    border-radius: 50% 50% 0 0;
+
+}
+.leftRing #LRingPlay .dish{
+
+    position: relative;
+
+    width: 20px;
+    height: 3px;
+    left: -94px;
+    top: -7px;
+    transform: rotate3d(90, 10, 0, 35deg);
+    padding: 20px 100px;
+    border: 3px solid var(--borderColor);
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 0px 1px  var(--backgroundColorDark) , 0px 0px 0px 3px white ,0px 0px 0px 10px  var(--borderColor) ; */
+    background-color: var(--backgroundColorLight);
+
+}
+
+.leftRing .firstRod{
+    position: relative;
+    width: 10px;
+    height: 60px;
+    border: 3px solid var(--borderColor);
+    left: 85.6%;
+    top: -12.4%;
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform: rotate(5deg);
+}
+
+.leftRing .secondRod{
+    position: relative;
+    width: 10px;
+    height: 220px;
+    border: 3px solid var(--borderColor);
+    left: 85.6%;
+    top: -12.4%;
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform: rotate(85deg);
+    transform-origin: top;
+}
+.leftRing .ball1{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--backgroundColorDark);
+    top: 0px;
+    left: 82.5%;
+    top: 15%;
+    border-radius: 50%;
+    border: 3px solid var(--borderColor);
+}
+.leftRing .VertibraRod{
+    position: relative;
+    width: 10px;
+    height: 270px;
+    border: 3px solid var(--borderColor);
+    left: 43.6%;
+    top: -63%;
+    border-radius: 3px;
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+}
+.leftRing .ball2{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--backgroundColorDark);
+    top: 0px;
+    left: 41.5%;
+    top: 19%;
+    border-radius: 50%;
+    border: 3px solid var(--borderColor);
+}
+.leftRing .legLeft{
+    
+    position:absolute;
+    width: 10px;
+    height: 14rem;
+    bottom: -18%;
+    left: 43.56%;
+    transform: rotate(45deg);
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+    border: 3px solid var(--borderColor);
+}
+.leftRing .legRight{
+    
+    position:absolute;
+    width: 10px;
+    height: 14rem;
+    bottom: -18%;
+    left: 43.56%;
+    transform: rotate(-45deg);
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+    border: 3px solid var(--borderColor);
+}
+.leftRing .leftHing{
+    padding: .4em;
+    width: 15%;
+    border: 3px solid var(--borderColor);
+    position: absolute;
+    background-color: var(--backgroundColorDark);
+    top: 100%;
+    left: -18%;
+    z-index: 1;   
+}
+.leftRing .rightHing{
+    padding: .4em;
+    width: 15%;
+    border: 3px solid var(--borderColor);
+    position: absolute;
+    background-color: var(--backgroundColorDark);
+    top: 100%;
+    left: 95%;
+    z-index: 1;   
+}
+.leftRing .legExtensionsLeft , .leftRing .legExtensionsRight{
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    border: 3px solid var(--borderColor);
+    left: 44%;
+    top: 67.4%;
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform-origin: bottom;
+}
+.leftRing .legExtensionsLeft{
+    transform: rotate(-45deg);
+}
+
+.leftRing .legExtensionsRight{
+    transform: rotate(45deg);
+}
+.rightRing{
+    position: relative;
+    top: -96%;
+    left: 60%;
+    width:30%;
+    height: 110%;
+    /* border: 1px solid black; */
+}
+
+.rightRing #RRingPlay{
+    position: relative;
+    left: 20%;
+    top: 0%;
+    width: fit-content;
+    /* border: 1px solid black; */
+}
+
+.rightRing #RRingPlay .topBall{
+    position: relative;
+    top: 2px;
+    left: 12px;
+    width: 1px;
+    height: 1px;
+    padding: 2px;
+    border: 3px solid var(--borderColor);
+    
+    background-color: var(--backgroundColor);
+    border-radius: 50%;
+}
+
+.rightRing #RRingPlay .cap{
+
+    position: relative;
+    width: 80px;
+    height: 4px;
+    left: -21px;
+    padding: 2px 30px;
+    border: 3px solid var(--borderColor);
+    border-radius: 50% 50% 0 0;
+
+    background-color: var(--backgroundColor);
+}
+.rightRing #RRingPlay .dish{
+    position: relative;
+    width: 20px;
+    height: 3px;
+    left: -80px;
+    top: -7px;
+    
+    background-color: var(--backgroundColorLight);
+    transform: rotate3d(90, 10, 0, 35deg);
+    padding: 20px 100px;
+    border: 3px solid var(--borderColor);
+    border-radius: 50%;
+
+}
+.rightRing .firstRod{
+    position: relative;
+    width: 10px;
+    height: 60px;
+    border: 3px solid var(--borderColor);
+    left: 26%;
+    top: -5.9%;
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform: rotate(-5deg);
+}
+.rightRing .secondRod{
+    position: relative;
+    width: 10px;
+    height: 230px;
+    border: 3px solid var(--borderColor);
+    left: 100%;
+    top: 1%;
+    
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform: rotate(100deg);
+    transform-origin: top;
+}
+.rightRing .ball1{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--backgroundColorDark);
+    top: 16%;
+    left: 25.5%;
+    border-radius: 50%;
+    border: 3px solid var(--borderColor);
+}
+.rightRing .VertibraRod{
+    position: relative;
+    width: 10px;
+    height: 370px;
+    border: 3px solid var(--borderColor);
+    left: 63.6%;
+    top: -48%;
+    border-radius: 3px;
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+}
+.rightRing .ball2{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--backgroundColorDark);
+    top: 0px;
+    left: 62%;
+    top: 20%;
+    border-radius: 50%;
+    border: 3px solid var(--borderColor);
+}
+.rightRing .legLeft{
+    
+    position:absolute;
+    width: 10px;
+    height: 10rem;
+    bottom: -8%;
+    left: 63.56%;
+    transform: rotate(38deg);
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+    border: 3px solid var(--borderColor);
+}
+.rightRing .legRight{
+    
+    position:absolute;
+    width: 10px;
+    height: 10rem;
+    bottom: -8%;
+    left: 63.56%;
+    transform: rotate(-38deg);
+    transform-origin: top;
+    background-color: var(--backgroundColorDark);
+    border: 3px solid var(--borderColor);
+}
+
+.rightRing .leftHing{
+    padding: .4em;
+    width: 15%;
+    border: 3px solid var(--borderColor);
+    position: absolute;
+    background-color: var(--backgroundColorDark);
+    top: 98.3%;
+    left: 29%;
+    z-index: 1;   
+}
+.rightRing .rightHing{
+    padding: .4em;
+    width: 15%;
+    border: 3px solid var(--borderColor);
+    position: absolute;
+    background-color: var(--backgroundColorDark);
+    top: 98.3%;
+    left: 86%;
+    z-index: 1;   
+}
+.rightRing .legExtensionsLeft , .rightRing .legExtensionsRight{
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    border: 3px solid var(--borderColor);
+    left: 63.5%;
+    top: 82.4%;
+    background-color: var(--backgroundColorDark);
+    border-radius: 3px;
+    transform-origin: bottom;
+}
+.rightRing .legExtensionsLeft{
+    transform: rotate(-45deg);
+}
+
+.rightRing .legExtensionsRight{
+    transform: rotate(45deg);
+}
+
+.centerDrum #Circle:hover , .LeftDrum #Box:hover , .RightDrum #BoxLow:hover {
+
+    animation:  shake 0.2s  ;
+}
+.RightDrum #BoxHigh:hover
+{
+    animation:  shakeUnique 0.2s  ;
+    transform: rotate(-10deg);
+}
+.leftRing #LRingPlay:hover ,.rightRing #RRingPlay:hover 
+{
+    animation:  shakeDish 0.2s ;
+}
+@keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    12%{
+      transform: translateX(3px);
+    }
+      
+    25%{
+        transform: translateX(-3px);
+      }
+      
+    37%{
+        transform: translateX(2px);
+      }
+      
+    50%{
+        transform: translateX(-2px);
+      }
+      
+    62%{
+        transform: translateX(1px);
+      }
+      
+    75%{
+        transform: translateX(-1px);
+      }
+            
+    87%{
+      transform: translateX(0.5px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes shakeDish{
+    0%{
+      transform: rotate(-1.0deg)
+    }
+    12%{
+      transform: rotate(1.0deg)
+    }
+      
+    25%{
+        transform: rotate(-1.0deg)
+      }
+      
+    37%{
+        transform: rotate(1.0deg)
+      }
+      
+    50%{
+        transform: rotate(-1.0deg)
+      }
+      
+    62%{
+        transform: rotate(1.0deg)
+      }
+      
+    75%{
+        transform: rotate(-1.0deg)
+      }
+            
+    87%{
+      transform:rotate(1.0deg)
+    }
+    100%{
+      transform:rotate(-1.0deg)
+    }
+  }
+
+  @keyframes shakeUnique{
+    0%{
+      transform: translateX(0) rotate(-10deg);
+    }
+    12%{
+      transform: translateX(3px) rotate(-10deg);
+    }
+      
+    25%{
+        transform: translateX(-3px) rotate(-10deg);
+      }
+      
+    37%{
+        transform: translateX(2px) rotate(-10deg);
+      }
+      
+    50%{
+        transform: translateX(-2px) rotate(-10deg);
+      }
+      
+    62%{
+        transform: translateX(1px) rotate(-10deg);
+      }
+      
+    75%{
+        transform: translateX(-1px) rotate(-10deg);
+      }
+            
+    87%{
+      transform: translateX(0.5px) rotate(-10deg);
+    }
+    100%{
+      transform: translateX(0px) rotate(-10deg);
+    }
+  }

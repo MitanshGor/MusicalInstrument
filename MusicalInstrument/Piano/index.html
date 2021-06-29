@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Player</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <audio controls="controls" type="audio/mp3" src="assets\audios\G5.mp3" id="audio"  hidden>
+    </audio>
+    <div class="heading">
+        <div class="header">
+            <h1>P<span>iano</span></h1>
+        </div>
+        <a href="/MainPage/index.html"><button class="goBack">Menu</button></a> 
+    </div>
+    <div id="container">
+        <div id="piano">
+            <div class="upperPiano">
+                <div class="screen">
+                    <h3><span>♫</span><span>♪</span><span>♫</span><span>♩</span><span>♭</span><span>♫</span><span>♪</span><span>♫</span><span>♩</span><span>♭</span></h3>
+                    <br><br><div class="lowerRightPart">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="rightPart">
+                    <div class="upperRightPart">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="lowerRightPart">
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerPiano">
+                    <div class="lowerPianoWhite">
+                        <div onmouseover="playSound(this.id)" id="btnWhite1">C</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite2">D</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite3">E</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite4">F</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite5">G</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite6">A</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite7">B</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite8">C</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite9">D</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite10">E</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite11">F</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite12">G</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite13">A</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite14">B</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite15">C</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite16">D</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite17">E</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite18">F</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite19">G</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite20">A</div>
+                        <div onmouseover="playSound(this.id)" id="btnWhite21">B</div>
+                    </div>
+                    <div class="lowerPianoBlack">
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack1"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack2"></div>
+                        </div>
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack3"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack4"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack5"></div>
+                        </div>
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack6"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack7"></div>
+                        </div>
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack8"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack9"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack10"></div>
+                        </div>
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack11"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack12"></div>
+                        </div>
+                        <div class="btnBlock">
+                            <div onmouseover="playSound(this.id)" id="btnBlack13"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack14"></div>
+                            <div onmouseover="playSound(this.id)" id="btnBlack15"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/script.js" ></script>
+</body>
+</html>
+
+
